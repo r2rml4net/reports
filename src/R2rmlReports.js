@@ -32,6 +32,7 @@ export class R2rmlReports extends LitElement {
   constructor() {
     super();
     this.implementations = [];
+    this.testCases = [];
   }
 
   static get styles() {
