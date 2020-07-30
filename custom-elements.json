@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "tags": [
+    {
+      "name": "r2rml-reports",
+      "description": "An application with a title and an action counter",
+      "events": [],
+      "slots": [],
+      "cssProperties": []
+    }
+  ]
+}
