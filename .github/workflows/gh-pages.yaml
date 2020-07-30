@@ -1,0 +1,20 @@
+name: Github Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1.4.2
+      - runs: yarn build
+      - name: GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2.1.1
+        with:
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
