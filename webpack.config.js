@@ -2,6 +2,7 @@
 const path = require('path');
 const merge = require('webpack-merge');
 const { createDefaultConfig } = require('@open-wc/building-webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = merge(
   createDefaultConfig({
@@ -25,5 +26,10 @@ module.exports = merge(
     node: {
       crypto: true,
     },
+    plugins: [
+      new CopyPlugin({
+        patterns: [{ from: 'src/CNAME' }],
+      }),
+    ],
   }
 );
