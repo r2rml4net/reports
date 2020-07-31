@@ -14,6 +14,14 @@ module.exports = merge(
         stream: 'readable-stream',
       },
     },
+    module: {
+      rules: [
+        {
+          test: /\.css$/,
+          use: ['raw-loader'],
+        },
+      ],
+    },
     node: {
       crypto: true,
     },
