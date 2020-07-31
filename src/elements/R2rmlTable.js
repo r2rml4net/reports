@@ -27,6 +27,12 @@ export class R2rmlTable extends LitElement {
         ${unsafeCSS(MaterializeCss)}
       `,
       css`
+        thead th {
+          position: sticky;
+          background-color: white;
+          top: 0;
+        }
+
         td.result {
           background-color: rgb(0 128 0 / 0.5);
           background-opacity: 0.5;
@@ -57,15 +63,15 @@ export class R2rmlTable extends LitElement {
       <table>
         <thead>
           <tr>
-            <td></td>
+            <th>↓ Test Case ↓ | Implementation →</th>
             ${repeat(
               this.implementations,
               impl => html`
-                <td>
+                <th>
                   <a href="${impl.out(doap.homepage).values[0]}" target="_blank"
                     >${impl.out(doap.name).values[0]}</a
                   >
-                </td>
+                </th>
               `
             )}
           </tr>
