@@ -1,30 +1,17 @@
 <p align="center">
-  <img width="200" src="https://open-wc.org/hero.png"></img>
+  <img width="100" src="https://avatars2.githubusercontent.com/u/9257017?s=200&v=4"></img>
 </p>
 
-## Open-wc Starter App
+## Implementation report of contemporary R2RML/DM tools
 
 [![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://github.com/open-wc)
 
-## Quickstart
+## Have your tool listed
 
-To get started:
+To have your imnplemenation of R2RML/Direct Mapping tool, open a PR to this repo by adding links to your EARL reports in the [src/reports.js](./src/reports.js) file. As soon as the PR is merged your tool will be added to the list.
 
-```bash
-npm init @open-wc
-# requires node 10 & npm 6 or higher
-```
+You can add multiple reports for you tool (for example separate to DM/R2RML and for every tested RDBMS)
 
-## Scripts
+## Generating reports
 
-- `start` runs your app for development, reloading on file changes
-- `start:build` runs your app after it has been built using the build command
-- `build` builds your app and outputs it in your `dist` directory
-- `test` runs your test suite with Karma
-- `lint` runs the linter for your project
-
-## Tooling configs
-
-For most of the tools, the configuration is in the `package.json` to reduce the amount of files in your project.
-
-If you customize the configuration a lot, you can consider moving them to individual files.
+If you don't have the reports ready you can create a new repo from [r2rml4net/test-runner](https://github.com/r2rml4net/test-runner). Check the [r2rml4net's setup](https://github.com/r2rml4net/r2rml4net-implementation-report) for an example of configuring your CI process.
