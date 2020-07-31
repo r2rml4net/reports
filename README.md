@@ -6,7 +6,17 @@
 
 [![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://github.com/open-wc)
 
-## Have your tool listed
+## Listed implementations
+
+1. [r2rml4net](https://github.com/r2rml4net/r2rml4net)
+
+## Why?
+
+The official R2RML Implementation report has not been updated since 2012. Many new tools have appeared and the old implementations are largely abandoned, outdated or evolved into something else.
+
+This and sibling repositories aim to provide a new, up to date outlook on the R2RML ecosystem.
+
+## Have your tool listed!
 
 To have your imnplemenation of R2RML/Direct Mapping tool, open a PR to this repo by adding links to your EARL reports in the [src/reports.js](./src/reports.js) file. As soon as the PR is merged your tool will be added to the list.
 
