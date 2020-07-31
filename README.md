@@ -10,7 +10,7 @@
 
 To have your imnplemenation of R2RML/Direct Mapping tool, open a PR to this repo by adding links to your EARL reports in the [src/reports.js](./src/reports.js) file. As soon as the PR is merged your tool will be added to the list.
 
-You can add multiple reports for you tool (for example separate to DM/R2RML and for every tested RDBMS)
+You can add multiple reports for you tool (for example separate to DM/R2RML and for every tested RDBMS). They will all be combined as a single column.
 
 ## Generating reports
 
