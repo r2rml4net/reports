@@ -4078,6 +4078,11 @@ faye-websocket@~0.11.1:
   dependencies:
     websocket-driver ">=0.5.1"
 
+feather-icon-literals@^1.0.0-rc.10:
+  version "1.0.0-rc.10"
+  resolved "https://registry.yarnpkg.com/feather-icon-literals/-/feather-icon-literals-1.0.0-rc.10.tgz#7bc00786779fc2dd2cde9cbb699fde514292c8dc"
+  integrity sha512-QI4oaWrfJVg0K2a5WMtzNt/KoHReJ4zxnWQe58cmRJL6BMgV0dtowkkNcMg98MWmj/mARwTB0VdjLqQSqxBniA==
+
 figgy-pudding@^3.5.1:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.2.tgz#b4eee8148abb01dcf1d1ac34367d59e12fa61d6e"

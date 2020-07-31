@@ -63,6 +63,7 @@
     "@rdfjs/fetch-lite": "^2.1.0",
     "@tpluscode/rdf-ns-builders": "^0.3.7",
     "clownface-io": "zazuko/clownface-io#tpluscode-proposals",
+    "feather-icon-literals": "^1.0.0-rc.10",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0",
     "materialize-css": "^1.0.0",

@@ -4,9 +4,12 @@ import { namedNode } from '@rdf-esm/dataset';
 import TermMap from '@rdf-esm/term-map';
 import { rdf } from '@tpluscode/rdf-ns-builders';
 import '@material/mwc-top-app-bar-fixed/mwc-top-app-bar-fixed.js';
+import { GitHub, setCustomTemplateLiteralTag } from 'feather-icon-literals';
 import reports from './reports.js';
 import clownface from './lib/clownface.js';
 import { doap, earl } from './lib/ns.js';
+
+setCustomTemplateLiteralTag(html);
 
 export class R2rmlReports extends LitElement {
   static get properties() {
@@ -37,6 +40,10 @@ export class R2rmlReports extends LitElement {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+      }
+
+      mwc-top-app-bar-fixed a {
+        color: white;
       }
     `;
   }
@@ -76,6 +83,12 @@ export class R2rmlReports extends LitElement {
     return html`<mwc-top-app-bar-fixed>
       <div slot="title">R2RML Implementation reports</div>
       <div id="main">${this._renderTable()}</div>
+      <a
+        href="https://github.com/r2rml4net/reports"
+        target="_blank"
+        slot="actionItems"
+        >${GitHub()}</a
+      >
     </mwc-top-app-bar-fixed>`;
   }
 
