@@ -53,6 +53,7 @@
   "author": "r2rml-reports",
   "license": "MIT",
   "dependencies": {
+    "@material/mwc-top-app-bar-fixed": "^0.17.2",
     "@rdf-esm/clownface": "^1.0.2",
     "@rdf-esm/dataset": "^0.5.0",
     "@rdf-esm/formats-common": "^0.5.2",

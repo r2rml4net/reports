@@ -30,7 +30,7 @@ export class R2rmlTable extends LitElement {
         thead th {
           position: sticky;
           background-color: white;
-          top: 0;
+          top: 64px;
         }
 
         td.result {

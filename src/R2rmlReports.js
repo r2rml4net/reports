@@ -3,6 +3,7 @@ import { LitElement, html, css } from 'lit-element';
 import { namedNode } from '@rdf-esm/dataset';
 import TermMap from '@rdf-esm/term-map';
 import { rdf } from '@tpluscode/rdf-ns-builders';
+import '@material/mwc-top-app-bar-fixed/mwc-top-app-bar-fixed.js';
 import reports from './reports.js';
 import clownface from './lib/clownface.js';
 import { doap, earl } from './lib/ns.js';
@@ -26,14 +27,16 @@ export class R2rmlReports extends LitElement {
     return css`
       :host {
         min-height: 100vh;
+        color: #1a2b42;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      #main {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        color: #1a2b42;
-        max-width: 960px;
-        margin: 0 auto;
-        text-align: center;
       }
     `;
   }
@@ -70,6 +73,13 @@ export class R2rmlReports extends LitElement {
   }
 
   render() {
+    return html`<mwc-top-app-bar-fixed>
+      <div slot="title">R2RML Implementation reports</div>
+      <div id="main">${this._renderTable()}</div>
+    </mwc-top-app-bar-fixed>`;
+  }
+
+  _renderTable() {
     if (!this.implementations.length) {
       return html`Loading reports...`;
     }
